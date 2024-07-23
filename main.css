@@ -133,3 +133,16 @@ header {
 .locations-item-title, .locations-item-text {
     line-height: 2;
 }
+
+/* Footer styles */
+
+.footer {
+    text-align: center;
+    max-height: 200px;
+}
+
+.footer-bottom {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 12px;
+}
