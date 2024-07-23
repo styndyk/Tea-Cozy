@@ -9,6 +9,7 @@ body {
     font-size: 16px;
     background-color: black;
     color: seashell;
+    overflow-x: hidden;
 }
 
 a {
@@ -23,7 +24,7 @@ ul, li {
 /* Header styles */
 
 header {
-    padding: 10px;
+    padding: 10px 30px;
     background-color: black;
     opacity: 0.9;
     text-align: center;
@@ -49,7 +50,7 @@ header {
 }
 
 
-/* Hero section */
+/* Hero section styles */
 
 .hero {
     width: 1200px;
@@ -65,6 +66,7 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: 70px; /* Додано, щоб секція розташовувалась нижче .header */
+    margin-bottom: 70px;
 }
 
 
@@ -72,4 +74,30 @@ header {
 .hero-container {
     background-color: black;
     min-width: 100%;
+}
+
+/* Featured section styles */
+
+.featured {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.featured-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.featured-item {
+    flex: 1 1 300px;
+}
+
+.featured-item img {
+    max-width: 300px;
+    max-height: 200px;
+    margin-bottom: 10px;
 }
