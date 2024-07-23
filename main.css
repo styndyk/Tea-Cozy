@@ -2,19 +2,22 @@
 
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 body {
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     background-color: black;
+    color: seashell;
 }
 
 a {
     text-decoration: underline;
     color: seashell;
+}
+
+ul, li {
+    list-style-type: none;
 }
 
 /* Header styles */
@@ -32,6 +35,8 @@ header {
     min-width: 100%;
     border-bottom: 1px solid seashell;
     max-height: 70px;
+    top: 0; /* Додано, для розташування вгорі */
+    z-index: 2;
 }
 
 .logo-img {
@@ -41,4 +46,30 @@ header {
 .header-nav-items {
     display: flex;
     gap: 25px;
+}
+
+
+/* Hero section */
+
+.hero {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("./img/img-mission-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px; /* Додано, щоб секція розташовувалась нижче .header */
+}
+
+
+
+.hero-container {
+    background-color: black;
+    min-width: 100%;
 }
