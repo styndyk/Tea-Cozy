@@ -21,7 +21,7 @@ ul, li {
     list-style-type: none;
 }
 
-/* Header styles */
+/* Header section styles */
 
 header {
     padding: 10px 30px;
@@ -100,4 +100,36 @@ header {
     max-width: 300px;
     max-height: 200px;
     margin-bottom: 10px;
+}
+
+/* Locations section styles */
+
+.locations {
+    background-image: url("./img/img-locations-background.jpg");
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.locations-container {
+    width: 100%;
+}
+
+.locations-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.locations-item {
+    background-color: black;
+    flex-basis: 300px;
+}
+
+.locations-item-title, .locations-item-text {
+    line-height: 2;
 }
